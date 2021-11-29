@@ -1,0 +1,26 @@
+.homeContent {
+  padding-top: 20px;
+  .hero {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-image: url(./../../images/hero.webp);
+    background-position: center;
+    background-size: cover;
+    height: 210px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      font-family: MarkOT;
+      margin-bottom: -5px;
+    }
+
+    h1 {
+      font-family: MarkOTLight;
+      font-size: 60px;
+    }
+  }
+}

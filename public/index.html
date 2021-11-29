@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Keurig Final</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="mobile-nav">
+        <i class="fas fa-bars fa-3x"></i>
+      </div>
+      <a id="home" href="#/home"><img src="./images/logo.svg" /></a>
+      <div class="search">
+        <img src="./images/search.svg" />
+        <input
+          type="text"
+          id="search"
+          placeholder="Search hundreds of ways to brew..."
+        />
+      </div>
+      <div class="links">
+        <button id="freeShipping">FREE SHIPPING $29+</button>
+        <a id="login" href="#/login"><img src="./images/login.svg" /></a>
+        <a id="cart" href="#/cart"><img src="./images/cart.svg" /></a>
+      </div>
+    </nav>
+    <div class="pageLinks">
+      <a href="#">COFFEE, TEA & MORE</a>
+      <a href="#">COFFEE MAKERS</a>
+      <a href="#">ACCESSORIES</a>
+      <a href="#">AUTO DELIVERY</a>
+      <a href="#">GET STARTED</a>
+      <a href="#">GIFT GUIDE</a>
+      <a href="#">DEALS</a>
+      <a href="#">CUSTOMIZE</a>
+    </div>
+
+    <div id="app"></div>
+
+    <!-- <footer>
+      <div>
+        Font made from
+        <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed
+        by CC BY 3.0
+      </div>
+    </footer> -->
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.5.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.5.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.5.0/firebase-database-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/9.5.0/firebase-firestore-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.5.0/firebase-functions-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.5.0/firebase-messaging-compat.js"
+    ></script>
+    <script defer src="/__/firebase/9.5.0/firebase-storage-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/9.5.0/firebase-analytics-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.5.0/firebase-remote-config-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.5.0/firebase-performance-compat.js"
+    ></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script src="app/model.js"></script>
+    <script src="app/app.js"></script>
+  </body>
+</html>
