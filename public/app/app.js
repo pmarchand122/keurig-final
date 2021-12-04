@@ -2,7 +2,7 @@ function route() {
   let pageID = window.location.hash;
   let ID = pageID.replace("#/", "");
   if (ID == "") {
-    MODEL.getPageContent("home");
+    MODEL.getPageContent("main");
   } else {
     MODEL.getPageContent(ID);
   }
