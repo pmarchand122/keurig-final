@@ -23,4 +23,19 @@
       font-size: 60px;
     }
   }
+
+  .coffeeMakers {
+    max-width: 1200px;
+    padding-top: 100px;
+    //background-color: khaki;
+    height: 1000px;
+    margin: 0 auto;
+    .coffeeMaker {
+      width: 280px;
+      height: 600px;
+      //background-color: lavender;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
 }

@@ -23,7 +23,6 @@ p {
 #app {
   width: 100vw;
   min-height: 87vh;
-  background-color: lightblue;
 }
 
 @font-face {
@@ -135,4 +134,16 @@ nav .search input {
 .homeContent .hero h1 {
   font-family: MarkOTLight;
   font-size: 60px;
+}
+.homeContent .coffeeMakers {
+  max-width: 1200px;
+  padding-top: 100px;
+  height: 1000px;
+  margin: 0 auto;
+}
+.homeContent .coffeeMakers .coffeeMaker {
+  width: 280px;
+  height: 600px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
