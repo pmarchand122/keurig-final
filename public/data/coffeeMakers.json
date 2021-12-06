@@ -3,66 +3,70 @@
     "id": 0,
     "name": "K-Supreme Plus® SMART Single Serve Coffee Maker",
     "price": 200,
-    "image": "./../images/coffeeMaker0.webp"
+    "image": "./../images/coffeeMaker0.webp",
+    "rating": { "decimal": 4.5, "number": 686 }
   },
   {
     "id": 1,
     "name": "K-Mini® Single Serve Coffee Maker",
     "price": 80,
-    "image": "./../images/coffeeMaker1.webp"
+    "image": "./../images/coffeeMaker1.webp",
+    "rating": { "decimal": 3.9, "number": 325 }
   },
   {
     "id": 2,
     "name": "Keurig® K-Select® Coffee Maker",
     "price": 110,
-    "image": "./../images/coffeeMaker2.webp"
+    "image": "./../images/coffeeMaker2.webp",
+    "rating": { "decimal": 4.1, "number": 1767 }
   },
   {
     "id": 3,
     "name": "K-Supreme Plus® SMART Single Serve Coffee Maker",
     "price": 200,
-    "image": "./../images/coffeeMaker3.webp"
+    "image": "./../images/coffeeMaker3.webp",
+    "rating": { "decimal": 4.3, "number": 2705 }
   },
   {
     "id": 4,
-    "name": "K-Supreme Plus® SMART Single Serve Coffee Maker",
-    "price": 200,
-    "image": "./../images/coffeeMaker0.webp"
+    "name": "K-Café® Single Serve Coffee Latte & Cappuccino Maker",
+    "price": 180,
+    "image": "./../images/coffeeMaker4.webp",
+    "rating": { "decimal": 4.3, "number": 769 }
   },
   {
     "id": 5,
-    "name": "K-Supreme Plus® SMART Single Serve Coffee Maker",
-    "price": 200,
-    "image": "./../images/coffeeMaker0.webp"
+    "name": "K-Duo™ Single Serve & Carafe Coffee Maker",
+    "price": 170,
+    "image": "./../images/coffeeMaker5.webp",
+    "rating": { "decimal": 3.8, "number": 992 }
   },
   {
     "id": 6,
-    "name": "K-Supreme Plus® SMART Single Serve Coffee Maker",
-    "price": 200,
-    "image": "./../images/coffeeMaker0.webp"
+    "name": "Keurig® K-Classic® Coffee Maker",
+    "price": 120,
+    "image": "./../images/coffeeMaker6.webp",
+    "rating": { "decimal": 4.1, "number": 1982 }
   },
   {
     "id": 7,
-    "name": "K-Supreme Plus® SMART Single Serve Coffee Maker",
+    "name": "K-Duo Plus™ Single Serve & Carafe Coffee Maker",
     "price": 200,
-    "image": "./../images/coffeeMaker0.webp"
+    "image": "./../images/coffeeMaker7.webp",
+    "rating": { "decimal": 4.0, "number": 1003 }
   },
   {
     "id": 8,
-    "name": "K-Supreme Plus® SMART Single Serve Coffee Maker",
+    "name": "K-Café® Special Edition Single Serve Coffee Latte & Cappuccino Maker",
     "price": 200,
-    "image": "./../images/coffeeMaker0.webp"
+    "image": "./../images/coffeeMaker8.webp",
+    "rating": { "decimal": 4.3, "number": 1302 }
   },
   {
     "id": 9,
-    "name": "K-Supreme Plus® SMART Single Serve Coffee Maker",
-    "price": 200,
-    "image": "./../images/coffeeMaker0.webp"
-  },
-  {
-    "id": 10,
-    "name": "K-Supreme Plus® SMART Single Serve Coffee Maker",
-    "price": 200,
-    "image": "./../images/coffeeMaker0.webp"
+    "name": "Keurig® K155 OfficePRO® Premier Brewing System",
+    "price": 275,
+    "image": "./../images/coffeeMaker9.webp",
+    "rating": { "decimal": 3.7, "number": 550 }
   }
 ]

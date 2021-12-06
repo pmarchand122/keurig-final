@@ -1,0 +1,65 @@
+.loginContent {
+  padding-top: 150px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  //background-color: rosybrown;
+  font-family: MarkOT;
+
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #000;
+    margin-bottom: 50px;
+    font-size: 20px;
+  }
+
+  .loginHolder {
+    width: 300px;
+    //background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+
+    .submitLogin {
+      padding-top: 15px;
+      font-size: 20px;
+      border: 2px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .submitLogin:hover {
+      cursor: pointer;
+      border: 2px solid orange;
+      color: lightgray;
+    }
+  }
+
+  .signupHolder {
+    width: 300px;
+    //background-color: saddlebrown;
+    display: flex;
+    flex-direction: column;
+
+    .submitSignup {
+      padding-top: 15px;
+      font-size: 20px;
+      border: 2px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .submitSignup:hover {
+      cursor: pointer;
+      border: 2px solid orange;
+      color: lightgrey;
+    }
+  }
+}

@@ -58,6 +58,10 @@ nav .links {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+nav .links #logoutButton {
+  color: #000;
+  font-size: 30px;
+}
 nav .links button {
   border: none;
   background-color: #fff;
@@ -205,4 +209,156 @@ nav .search input {
   width: 22px;
   background-color: #000;
   border-radius: 50%;
+}
+.homeContent .coffeeMakers .coffeeMaker .coffeeInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.homeContent .coffeeMakers .coffeeMaker .coffeeInfo h1 {
+  font-family: MarkOT;
+  font-size: 16px;
+  color: #333333;
+}
+.homeContent .coffeeMakers .coffeeMaker .coffeeInfo p {
+  font-family: MarkOTLight;
+  font-size: 20px;
+  color: #333333;
+}
+.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .ratings .stars {
+  padding-right: 10px;
+}
+.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .ratings p {
+  font-size: 15px;
+}
+.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .freeShipping {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .freeShipping img {
+  margin-top: -17px;
+  padding-right: 10px;
+}
+.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .freeShipping p {
+  font-size: 15px;
+}
+.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .buyNow {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 45px;
+  width: 230px;
+  border: 2px solid #f1be48;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: MarkOT;
+  font-size: 10px;
+  padding-top: 15px;
+}
+.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .buyNow:hover {
+  cursor: pointer;
+  border: 2px solid purple;
+}
+
+.loginContent {
+  padding-top: 150px;
+  margin: 0 auto;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-family: MarkOT;
+}
+.loginContent h1 {
+  margin-bottom: 50px;
+}
+.loginContent input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #000;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.loginContent .loginHolder {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.loginContent .loginHolder .submitLogin {
+  padding-top: 15px;
+  font-size: 20px;
+  border: 2px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.loginContent .loginHolder .submitLogin:hover {
+  cursor: pointer;
+  border: 2px solid orange;
+  color: lightgray;
+}
+.loginContent .signupHolder {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.loginContent .signupHolder .submitSignup {
+  padding-top: 15px;
+  font-size: 20px;
+  border: 2px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.loginContent .signupHolder .submitSignup:hover {
+  cursor: pointer;
+  border: 2px solid orange;
+  color: lightgrey;
 }

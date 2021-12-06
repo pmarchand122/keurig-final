@@ -85,6 +85,73 @@
           }
         }
       }
+
+      .coffeeInfo {
+        display: flex;
+        flex-direction: column;
+        //background-color: aquamarine;
+        padding-top: 15px;
+        padding-left: 15px;
+
+        h1 {
+          font-family: MarkOT;
+          font-size: 16px;
+          color: rgb(51, 51, 51);
+        }
+
+        p {
+          font-family: MarkOTLight;
+          font-size: 20px;
+          color: rgb(51, 51, 51);
+        }
+
+        .ratings {
+          display: flex;
+
+          .stars {
+            padding-right: 10px;
+            //margin-right: 10px;
+          }
+
+          p {
+            font-size: 15px;
+          }
+        }
+
+        .freeShipping {
+          display: flex;
+          align-items: center;
+          //justify-content: space-evenly;
+          img {
+            margin-top: -17px;
+            padding-right: 10px;
+          }
+
+          p {
+            font-size: 15px;
+          }
+        }
+
+        .buyNow {
+          margin-top: 10px;
+          margin-left: 10px;
+          height: 45px;
+          width: 230px;
+          border: 2px solid rgb(241, 190, 72);
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          font-family: MarkOT;
+          font-size: 10px;
+          padding-top: 15px;
+        }
+
+        .buyNow:hover {
+          cursor: pointer;
+          border: 2px solid purple;
+        }
+      }
     }
   }
 }
