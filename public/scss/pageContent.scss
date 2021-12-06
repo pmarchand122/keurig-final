@@ -1,4 +1,4 @@
-.homeContent {
+.pageContent {
   padding-top: 20px;
   .hero {
     margin: 0 auto;
@@ -31,10 +31,12 @@
     height: 1000px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
+    //background-color: blue;
     flex-wrap: wrap;
     .coffeeMaker {
       margin-bottom: 25px;
+      margin-right: 20px;
       width: 280px;
       height: 600px;
       //background-color: lavender;
@@ -148,6 +150,26 @@
         }
 
         .buyNow:hover {
+          cursor: pointer;
+          border: 2px solid purple;
+        }
+
+        .removeFromCart {
+          margin-top: 10px;
+          margin-left: 10px;
+          height: 45px;
+          width: 230px;
+          border: 2px solid rgb(241, 190, 72);
+          display: flex;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          font-family: MarkOT;
+          font-size: 10px;
+          padding-top: 15px;
+        }
+
+        .removeFromCart:hover {
           cursor: pointer;
           border: 2px solid purple;
         }

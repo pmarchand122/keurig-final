@@ -108,10 +108,10 @@ nav .search input {
   color: #000;
 }
 
-.homeContent {
+.pageContent {
   padding-top: 20px;
 }
-.homeContent .hero {
+.pageContent .hero {
   margin: 0 auto;
   max-width: 1200px;
   background-image: url(./../../images/hero.webp);
@@ -131,15 +131,15 @@ nav .search input {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.homeContent .hero p {
+.pageContent .hero p {
   font-family: MarkOT;
   margin-bottom: -5px;
 }
-.homeContent .hero h1 {
+.pageContent .hero h1 {
   font-family: MarkOTLight;
   font-size: 60px;
 }
-.homeContent .coffeeMakers {
+.pageContent .coffeeMakers {
   max-width: 1200px;
   padding-top: 100px;
   height: 1000px;
@@ -147,32 +147,33 @@ nav .search input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.homeContent .coffeeMakers .coffeeMaker {
+.pageContent .coffeeMakers .coffeeMaker {
   margin-bottom: 25px;
+  margin-right: 20px;
   width: 280px;
   height: 600px;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.homeContent .coffeeMakers .coffeeMaker .imgHolder {
+.pageContent .coffeeMakers .coffeeMaker .imgHolder {
   padding-top: 30px;
   height: 300px;
   text-align: center;
 }
-.homeContent .coffeeMakers .coffeeMaker .imgHolder img {
+.pageContent .coffeeMakers .coffeeMaker .imgHolder img {
   height: 210px;
 }
-.homeContent .coffeeMakers .coffeeMaker .colorPicker {
+.pageContent .coffeeMakers .coffeeMaker .colorPicker {
   height: 35px;
   position: relative;
 }
-.homeContent .coffeeMakers .coffeeMaker .colorPicker .largeCircle {
+.pageContent .coffeeMakers .coffeeMaker .colorPicker .largeCircle {
   position: absolute;
   height: 35px;
   width: 35px;
@@ -189,7 +190,7 @@ nav .search input {
       -ms-flex-align: center;
           align-items: center;
 }
-.homeContent .coffeeMakers .coffeeMaker .colorPicker .largeCircle .whiteCircle {
+.pageContent .coffeeMakers .coffeeMaker .colorPicker .largeCircle .whiteCircle {
   height: 30px;
   width: 30px;
   background-color: #fff;
@@ -204,13 +205,13 @@ nav .search input {
       -ms-flex-align: center;
           align-items: center;
 }
-.homeContent .coffeeMakers .coffeeMaker .colorPicker .largeCircle .whiteCircle .smallCircle {
+.pageContent .coffeeMakers .coffeeMaker .colorPicker .largeCircle .whiteCircle .smallCircle {
   height: 22px;
   width: 22px;
   background-color: #000;
   border-radius: 50%;
 }
-.homeContent .coffeeMakers .coffeeMaker .coffeeInfo {
+.pageContent .coffeeMakers .coffeeMaker .coffeeInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,28 +222,28 @@ nav .search input {
   padding-top: 15px;
   padding-left: 15px;
 }
-.homeContent .coffeeMakers .coffeeMaker .coffeeInfo h1 {
+.pageContent .coffeeMakers .coffeeMaker .coffeeInfo h1 {
   font-family: MarkOT;
   font-size: 16px;
   color: #333333;
 }
-.homeContent .coffeeMakers .coffeeMaker .coffeeInfo p {
+.pageContent .coffeeMakers .coffeeMaker .coffeeInfo p {
   font-family: MarkOTLight;
   font-size: 20px;
   color: #333333;
 }
-.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .ratings {
+.pageContent .coffeeMakers .coffeeMaker .coffeeInfo .ratings {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .ratings .stars {
+.pageContent .coffeeMakers .coffeeMaker .coffeeInfo .ratings .stars {
   padding-right: 10px;
 }
-.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .ratings p {
+.pageContent .coffeeMakers .coffeeMaker .coffeeInfo .ratings p {
   font-size: 15px;
 }
-.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .freeShipping {
+.pageContent .coffeeMakers .coffeeMaker .coffeeInfo .freeShipping {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,14 +251,14 @@ nav .search input {
       -ms-flex-align: center;
           align-items: center;
 }
-.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .freeShipping img {
+.pageContent .coffeeMakers .coffeeMaker .coffeeInfo .freeShipping img {
   margin-top: -17px;
   padding-right: 10px;
 }
-.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .freeShipping p {
+.pageContent .coffeeMakers .coffeeMaker .coffeeInfo .freeShipping p {
   font-size: 15px;
 }
-.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .buyNow {
+.pageContent .coffeeMakers .coffeeMaker .coffeeInfo .buyNow {
   margin-top: 10px;
   margin-left: 10px;
   height: 45px;
@@ -277,7 +278,31 @@ nav .search input {
   font-size: 10px;
   padding-top: 15px;
 }
-.homeContent .coffeeMakers .coffeeMaker .coffeeInfo .buyNow:hover {
+.pageContent .coffeeMakers .coffeeMaker .coffeeInfo .buyNow:hover {
+  cursor: pointer;
+  border: 2px solid purple;
+}
+.pageContent .coffeeMakers .coffeeMaker .coffeeInfo .removeFromCart {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 45px;
+  width: 230px;
+  border: 2px solid #f1be48;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: MarkOT;
+  font-size: 10px;
+  padding-top: 15px;
+}
+.pageContent .coffeeMakers .coffeeMaker .coffeeInfo .removeFromCart:hover {
   cursor: pointer;
   border: 2px solid purple;
 }
