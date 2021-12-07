@@ -58,6 +58,16 @@ p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.navHolder nav .links #numberOfItems {
+  font-family: MarkOT;
+  position: absolute;
+  font-size: 15px;
+  right: 50px;
+  top: 45px;
+  z-index: 98;
+  display: inline;
+  pointer-events: none;
+}
 .navHolder nav .links #logoutButton {
   color: #000;
   font-size: 30px;
@@ -133,6 +143,9 @@ p {
   .navHolder nav .links #freeShipping {
     display: none;
   }
+  .navHolder nav .links #numberOfItems {
+    top: 6px;
+  }
   .navHolder nav .search {
     position: absolute;
     border-radius: 0px;
@@ -197,6 +210,7 @@ footer {
 .pageContent #cartHeader {
   font-family: MarkOT;
   font-size: 30px;
+  text-align: center;
 }
 .pageContent .buttons {
   display: -webkit-box;

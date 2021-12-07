@@ -74,9 +74,12 @@ function addtoCart(id) {
   console.log(id);
   window.alert("You have added to your cart");
   cartArray.push(id);
+  $("#numberOfItems").html(cartArray.length);
 }
 
 function appendToCart() {
+  let totalPrice = 0;
+
   console.log(cartArray);
   for (var i = 0; i < coffeeMakers.length; i++) {
     for (var x = 0; x < cartArray.length; x++) {
@@ -88,6 +91,7 @@ function appendToCart() {
 
   console.log(coffeeArray);
   for (var i = 0; i < coffeeArray.length; i++) {
+    totalPrice += coffeeArray[i].price;
     $("#cartItems").append(`
     <div class="coffeeMaker" id="cartItem${coffeeArray[i].id}">
     <div class="imgHolder">
@@ -123,6 +127,8 @@ function appendToCart() {
     </div>
   </div>
     `);
+
+    $("#total").append(`<p>Total: $${totalPrice}</p>`);
   }
 
   coffeeArray = [];
@@ -133,12 +139,23 @@ function removeFromCart(ID) {
   const filteredCart = cartArray.filter((coffee, index) => index !== ID);
 
   cartArray = filteredCart;
+  $("#numberOfItems").html(cartArray.length == 0 ? "" : cartArray.length);
 
   MODEL.getPageContent("checkout", appendToCart);
 }
 
 function clearCart() {
   cartArray = [];
+  $("#numberOfItems").html("");
+
+  MODEL.getPageContent("checkout", appendToCart);
+}
+
+function purchase() {
+  window.alert("You have purchased every item in your cart");
+  cartArray = [];
+  $("#numberOfItems").html("");
+
   MODEL.getPageContent("checkout", appendToCart);
 }
 
