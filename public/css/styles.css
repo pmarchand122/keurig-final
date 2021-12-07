@@ -22,7 +22,7 @@ p {
 
 #app {
   width: 100vw;
-  min-height: 87vh;
+  min-height: 100vh;
 }
 
 @font-face {
@@ -33,7 +33,7 @@ p {
   font-family: MarkOTLight;
   src: url(./fonts/MarkOTLight.otf);
 }
-nav {
+.navHolder nav {
   max-width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -46,10 +46,10 @@ nav {
   padding-right: 40px;
   padding-left: 40px;
 }
-nav #home img {
+.navHolder nav #home img {
   height: 40px;
 }
-nav .links {
+.navHolder nav .links {
   width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,17 +58,17 @@ nav .links {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-nav .links #logoutButton {
+.navHolder nav .links #logoutButton {
   color: #000;
   font-size: 30px;
 }
-nav .links button {
+.navHolder nav .links button {
   border: none;
   background-color: #fff;
   font-family: MarkOT;
   padding-bottom: 10px;
 }
-nav .search {
+.navHolder nav .search {
   width: 600px;
   height: 40px;
   background-color: lightgrey;
@@ -79,37 +79,187 @@ nav .search {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 20px;
+  padding-right: 20px;
 }
-nav .search img {
+.navHolder nav .search img {
   height: 25px;
   padding-right: 20px;
 }
-nav .search input {
+.navHolder nav .search input {
   width: 500px;
   border: none;
   background-color: lightgrey;
   font-family: MarkOT;
 }
-
-.mobile-nav {
+.navHolder .mobile-nav {
   display: none;
 }
-
-.pageLinks {
+.navHolder .pageLinks {
   font-family: MarkOT;
   margin: 0 auto;
   margin-top: 30px;
   text-align: center;
 }
-.pageLinks a {
+.navHolder .pageLinks a {
   margin-right: 30px;
   text-decoration: none;
   color: #000;
 }
 
+@media screen and (max-width: 1100px) {
+  .navHolder .mobile-nav {
+    display: block;
+    z-index: 100;
+  }
+  .navHolder .mobile-nav:hover {
+    cursor: pointer;
+  }
+  .navHolder nav {
+    margin-bottom: 100px;
+    position: relative;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .navHolder nav #home {
+    margin-left: 40px;
+  }
+  .navHolder nav .links {
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    width: 100px;
+  }
+  .navHolder nav .links #freeShipping {
+    display: none;
+  }
+  .navHolder nav .search {
+    position: absolute;
+    border-radius: 0px;
+    width: 100vw;
+    margin: 0 auto;
+    left: 0;
+    padding-left: 40px;
+    right: auto;
+    top: 50px;
+  }
+  .navHolder .pageLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: left;
+    background-color: salmon;
+    width: 200px;
+    height: 500px;
+    top: 55px;
+    border-radius: 20px;
+    left: -200px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .navHolder .pageLinks a {
+    padding-bottom: 40px;
+  }
+}
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0 auto;
+  height: 50px;
+  max-width: 1200px;
+  position: relative;
+  bottom: 0;
+  left: auto;
+  border-top: 2px solid #c3c3c3;
+  font-family: MarkOT;
+  font-size: 10px;
+  color: #c3c3c3;
+}
+
 .pageContent {
   padding-top: 20px;
+}
+.pageContent #cartHeader {
+  font-family: MarkOT;
+  font-size: 30px;
+}
+.pageContent .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  bottom: 0;
+  padding-bottom: 100px;
+  left: auto;
+  margin: 0 auto;
+  margin-top: -200px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 1200px;
+}
+.pageContent .buttons .clearCart {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 45px;
+  width: 230px;
+  border: 2px solid #f1be48;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: MarkOT;
+  font-size: 10px;
+  padding-top: 15px;
+}
+.pageContent .buttons .clearCart:hover {
+  cursor: pointer;
+  border: 2px solid purple;
+}
+.pageContent .buttons .purchase {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 45px;
+  width: 230px;
+  border: 2px solid #f1be48;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: MarkOT;
+  font-size: 10px;
+  padding-top: 15px;
+}
+.pageContent .buttons .purchase:hover {
+  cursor: pointer;
+  border: 2px solid purple;
 }
 .pageContent .hero {
   margin: 0 auto;
@@ -142,7 +292,7 @@ nav .search input {
 .pageContent .coffeeMakers {
   max-width: 1200px;
   padding-top: 100px;
-  height: 1000px;
+  min-height: 1000px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,10 +457,17 @@ nav .search input {
   border: 2px solid purple;
 }
 
+@media screen and (max-width: 1100px) {
+  .pageContent .coffeeMakers {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .loginContent {
   padding-top: 150px;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,4 +543,17 @@ nav .search input {
   cursor: pointer;
   border: 2px solid orange;
   color: lightgrey;
+}
+
+@media screen and (max-width: 1100px) {
+  .loginContent {
+    margin-top: -200px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }

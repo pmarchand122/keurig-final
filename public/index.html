@@ -11,45 +11,39 @@
     />
   </head>
   <body>
-    <nav>
-      <div class="mobile-nav">
-        <i class="fas fa-bars fa-3x"></i>
+    <div class="navHolder">
+      <nav>
+        <div class="mobile-nav">
+          <i class="fas fa-bars fa-3x"></i>
+        </div>
+        <a id="home" href="#/main"><img src="./images/logo.svg" /></a>
+        <div class="search">
+          <img src="./images/search.svg" />
+          <input
+            type="text"
+            id="search"
+            placeholder="Search hundreds of ways to brew..."
+          />
+        </div>
+        <div class="links">
+          <button id="freeShipping">FREE SHIPPING $29+</button>
+          <a id="login" href="#/user"></a>
+          <a id="cart" href="#/checkout"><img src="./images/cart.svg" /></a>
+        </div>
+      </nav>
+      <div class="pageLinks">
+        <a href="#">COFFEE, TEA & MORE</a>
+        <a href="#">COFFEE MAKERS</a>
+        <a href="#">ACCESSORIES</a>
+        <a href="#">AUTO DELIVERY</a>
+        <a href="#">GET STARTED</a>
+        <a href="#">GIFT GUIDE</a>
+        <a href="#">DEALS</a>
+        <a href="#">CUSTOMIZE</a>
       </div>
-      <a id="home" href="#/main"><img src="./images/logo.svg" /></a>
-      <div class="search">
-        <img src="./images/search.svg" />
-        <input
-          type="text"
-          id="search"
-          placeholder="Search hundreds of ways to brew..."
-        />
-      </div>
-      <div class="links">
-        <button id="freeShipping">FREE SHIPPING $29+</button>
-        <a id="login" href="#/user"></a>
-        <a id="cart" href="#/checkout"><img src="./images/cart.svg" /></a>
-      </div>
-    </nav>
-    <div class="pageLinks">
-      <a href="#">COFFEE, TEA & MORE</a>
-      <a href="#">COFFEE MAKERS</a>
-      <a href="#">ACCESSORIES</a>
-      <a href="#">AUTO DELIVERY</a>
-      <a href="#">GET STARTED</a>
-      <a href="#">GIFT GUIDE</a>
-      <a href="#">DEALS</a>
-      <a href="#">CUSTOMIZE</a>
     </div>
 
     <div id="app"></div>
-
-    <!-- <footer>
-      <div>
-        Font made from
-        <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed
-        by CC BY 3.0
-      </div>
-    </footer> -->
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/9.5.0/firebase-app-compat.js"></script>

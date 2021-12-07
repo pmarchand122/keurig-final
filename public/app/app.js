@@ -117,7 +117,7 @@ function appendToCart() {
         <img src="../../images/shipping.svg"/>
         <p>Free shipping</p>
       </div>
-      <div class="removeFromCart" onclick="removeFromCart(${coffeeArray[i].id})">
+      <div class="removeFromCart" onclick="removeFromCart(${i})">
         <h2>REMOVE FROM CART</h2>
       </div>
     </div>
@@ -129,18 +129,22 @@ function appendToCart() {
 }
 
 function removeFromCart(ID) {
-  console.log("REMOVE");
-  for (var i = 0; i < coffeeArray.length; i++) {
-    if (coffeeArray[i].id == ID) {
-      coffeeArray.splice(i);
-    }
-    console.log(coffeeArray);
-  }
+  console.log(cartArray);
+  const filteredCart = cartArray.filter((coffee, index) => index !== ID);
+
+  cartArray = filteredCart;
+
+  MODEL.getPageContent("checkout", appendToCart);
+}
+
+function clearCart() {
+  cartArray = [];
+  MODEL.getPageContent("checkout", appendToCart);
 }
 
 //array that holds json data;
 let coffeeMakers = [];
-function loadCoffeeMakers() {
+async function loadCoffeeMakers() {
   $.getJSON("data/coffeeMakers.json", function (data) {
     $.each(data, function (index, coffeeMaker) {
       coffeeMakers.push(coffeeMaker);
@@ -205,9 +209,21 @@ function signup() {
     });
 }
 
+function mobileNav() {
+  let active = false;
+  $(".mobile-nav").click(function (e) {
+    active = !active;
+    if (active) {
+      $(".pageLinks").css("left", 0);
+    } else {
+      $(".pageLinks").css("left", -200);
+    }
+  });
+}
+
 $(document).ready(function () {
   initListeners();
-
+  mobileNav();
   try {
     let app = firebase.app();
     initFirebase();

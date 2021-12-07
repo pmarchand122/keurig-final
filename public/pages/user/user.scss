@@ -1,7 +1,7 @@
 .loginContent {
   padding-top: 150px;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: space-evenly;
   //background-color: rosybrown;
@@ -61,5 +61,14 @@
       border: 2px solid orange;
       color: lightgrey;
     }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .loginContent {
+    margin-top: -200px;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
   }
 }
