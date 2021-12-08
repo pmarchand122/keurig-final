@@ -306,6 +306,7 @@ footer {
 .pageContent .coffeeMakers {
   max-width: 1200px;
   padding-top: 100px;
+  margin-bottom: 200px;
   min-height: 1000px;
   margin: 0 auto;
   display: -webkit-box;
@@ -476,6 +477,9 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .pageContent .buttons {
+    margin-top: 100px;
   }
 }
 .loginContent {
